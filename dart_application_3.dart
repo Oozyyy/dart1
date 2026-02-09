@@ -1,11 +1,14 @@
 
-
+import 'dart:io';
 import 'dart:math';
 
 
 void main() {
-  int a = 52;
-  int b = 3;
+  print("Введите первое число:");
+  int a = int.parse(stdin.readLineSync()!);
+
+  print("Введите второе число:");
+  int b = int.parse(stdin.readLineSync()!);
 
   print("Сложение: ${a + b}");
   print("Вычитание: ${a - b}");
@@ -49,8 +52,9 @@ void main() {
   }
 
   if (!condition1) {
-    print("condition1 ложно ");
+    print("a > 5 - ложно ");
   } else {
-    print("condition1 истинно ");
+    print("a > 5 - истинно ");
   }
 }
+
